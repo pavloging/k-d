@@ -56,7 +56,8 @@ h3 {
   align-items: center;
   transition: 1s;
 }
-#call div a:hover {
+#call div a:hover,
+#call div a:active {
   filter: brightness(70%);
   transition: 1s;
 }
@@ -111,7 +112,8 @@ h3 {
   display: inline-block;
   transition: 1s;
 }
-#btn-order button:hover {
+#btn-order button:hover,
+#btn-order button:active {
   box-shadow: 0 0 15px #970a09;
   filter: brightness(80%);
   transition: 1s;
@@ -231,7 +233,8 @@ h3 {
 #icons img {
   transition: 1s;
 }
-#icons img:hover {
+#icons img:hover,
+#icons img:active {
   filter: brightness(70%);
   transition: 1s;
 }
@@ -325,10 +328,15 @@ h3 {
     font-size: 2.5vw;
   }
   #btn-order button {
-    padding: 1.3vw 3vw;
+    padding: 1.5vw 3.2vw;
   }
   #btn-order button h2 {
     font-size: 2.3vw;
+  }
+  .catalog #btn-order {
+    position: absolute;
+    bottom: 6vw;
+    left: 24vw;
   }
 
   /* why */
@@ -348,7 +356,7 @@ h3 {
 
   /* catalog */
   .catalog {
-    grid-template-rows: 0.6fr 2fr 1fr;
+    grid-template-rows: 0.7fr 2fr 1fr;
     background-image: url(images/catalog/bg-m.jpg);
     padding-left: 5vw;
     padding-right: 5vw;
