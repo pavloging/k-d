@@ -161,7 +161,7 @@ h3 {
   margin-top: 1vw;
 }
 .catalog div div h2 {
-  margin: 1vw;
+  margin: 3vw;
 }
 .catalog div div h3 {
   font-family: "Montserrat", sans-serif;
@@ -325,8 +325,9 @@ h3 {
     font-size: 2.5vw;
   }
   #btn-order {
-    margin-top: 8vw;
-    align-items: normal;
+    position: absolute;
+    bottom: 6vw;
+    left: 24vw;
   }
   #btn-order button {
     padding: 1.3vw 3vw;
@@ -352,6 +353,7 @@ h3 {
 
   /* catalog */
   .catalog {
+    grid-template-rows: 0.6fr 2fr 1fr;
     background-image: url(images/catalog/bg-m.jpg);
     padding-left: 5vw;
     padding-right: 5vw;
@@ -359,6 +361,9 @@ h3 {
   }
   .catalog h1 {
     font-size: 3vw;
+  }
+  #my-catalog h1 {
+    margin-top: 5vw;
   }
   #my-cake-line-1,
   #cake-2-1,
@@ -375,6 +380,7 @@ h3 {
     font-size: 3vw;
   }
   #cake-2-2 h3 {
+    line-height: 1.35;
     font-size: 2vw;
   }
   #my-cake {
