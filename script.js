@@ -1,4 +1,5 @@
 var el = 4;
+var move;
 const slider = [
   {
     img: "images/catalog/cake/cake-1-1.jpg",
@@ -50,12 +51,14 @@ function sizeScreen() {
 }
 
 function innerLeft() {
+  move = "right";
   el = el + 1;
   el > 5 ? (el = 0) : false;
   mobileFun();
 }
 
 function innerRight() {
+  move = "left";
   el = el - 1;
   el < 0 ? (el = 5) : false;
   mobileFun();
@@ -65,7 +68,7 @@ function mobileFun() {
   let divIsSliderAdd = `
     <div id="btnLeft" onclick="innerLeft()"></div>
     <div id="btnRight" onclick="innerRight()"></div>
-    <div id="cake-2-2">
+    <div id="cake-2-2" data-aos="fade-${move}">
       <img src=${slider[el].img} />
       <h2>${slider[el].h2}</h2>
       <h3>${slider[el].h3}</h3>
@@ -74,6 +77,7 @@ function mobileFun() {
   const divUpForAddSlider = document.getElementById("my-cake-line-2");
   divUpForAddSlider.innerHTML = divIsSliderAdd;
 }
+
 function desktopFun() {
   let divIsSliderAdd = `
     <div id="cake-2-1">
